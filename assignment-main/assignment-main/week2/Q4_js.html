@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"></meta>
+	<script type="text/javascript">
+	function twoSum(nums,target){
+		this.nums = nums;
+		this.target = target;
+		// var nums=[2,11,7,5];
+		// var target=9;
+		var b =[];
+		var n =[];
+		for (var i = 0; i < nums.length; i++){
+			//console.log("i",nums[i]);
+			for(var j = 0; j < nums.length; j++){
+				//console.log("j",nums[j]);
+				if (nums[i] + nums[j] === target){
+					b.push(nums[j]);
+				};
+			};
+		};
+		for (var i =0; i<nums.length;i++){
+			if(nums[i] === b[0]){
+				n.push(i);
+			};
+			if(nums[i] === b[1]){
+				n.push(i);
+				//var result2=nums.indexOf(i+2);
+			};
+			var result = n;
+		};
+		alert(result);
+		console.log(result);
+	};
+	result=twoSum([2, 11, 7, 15], 9)
+	</script>
+</head>
+<body>
+	<p>作業四</p>
+</body>
+</html>
